@@ -15,9 +15,9 @@ io.on('connection', function(socket) {
 		socket.broadcast.emit('message', message);
 	})
 
-	socket.emit('message', {
-		text:'welcome'
-	})
+	// socket.emit('message', {
+	// 	text:'welcome'
+	// })
 })
 
 http.listen(PORT, function() {
